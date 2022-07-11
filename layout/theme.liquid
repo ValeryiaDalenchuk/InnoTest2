@@ -212,6 +212,13 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+            crossorigin
+    />
+    <link rel="stylesheet" href="{{ 'test.css' | asset_url }}" media="print" onload="this.media='all'">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" crossorigin></script>
   </head>
 
   <body class="gradient">
@@ -268,5 +275,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script src="{{ 'test.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
