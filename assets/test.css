@@ -12,8 +12,13 @@
     line-height: 36px;
     color: #111111;
 }
+.div-swipper{
+    width:101%;
+    overflow: hidden;
+}
 .swiper {
     width: 100%;
+    min-width:612px;
     height: 646px;
 }
 .swiper-slide a .new{
@@ -123,13 +128,20 @@
     color: #eeeeee;
     font-weight: bold;
 }
+.swiper-slide{
+    max-width:330px;
+}
 @media only screen and (max-width: 1394px) {
     .section-product-slideshow h1{
         padding:12px;
     }
+    .div-swipper{
+        padding-left: 12px;
+        width: 100%;
+    }
     .swiper {
         margin:0 auto;
-        padding:0 12px;
+        padding:0;
         width: 100%;
     }
 }
@@ -149,5 +161,8 @@
         font-size: 18px;
         letter-spacing: -0.22px;
         line-height: 18px;
+    }
+    .swiper-slide input[type="submit"]{
+        box-shadow: #fff 1px 0 0 1px,#111 3px 2px 0 1px;
     }
 }
